@@ -36,7 +36,7 @@
 
 
 
-### 🛑 **Không push code trực tiếp lên `master` 
+### 🛑 **Không push code trực tiếp lên `master`**
 Tất cả thay đổi phải thông qua Pull Request và review bởi ít nhất 1 thành viên.
 
 ### 🎯 **Quy tắc Code Review**
