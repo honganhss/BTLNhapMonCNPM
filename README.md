@@ -3,7 +3,7 @@
 ## 🔥 Nguyên tắc làm việc trên Git
 
 ### 📌 **Nhánh chính (Main Branch)**
-- `main`: Chứa phiên bản ổn định, không commit trực tiếp lên đây.
+- `master`: Chứa phiên bản ổn định, không commit trực tiếp lên đây.
 
 ### 🔄 **Quy trình làm việc**
 1. **Tạo nhánh mới khi làm tính năng**:
@@ -31,12 +31,12 @@
    ```sh
    git push origin feature/tên-tính-năng
    ```
-4. **Tạo Pull Request (PR) để review và merge vào `main`**.
+4. **Tạo Pull Request (PR) để review và merge vào `master`**.
 5. **Có thể dùng git desktop dùng cho tiện**
 
 
 
-### 🛑 **Không push code trực tiếp lên `main` hoặc `develop`**
+### 🛑 **Không push code trực tiếp lên `master` 
 Tất cả thay đổi phải thông qua Pull Request và review bởi ít nhất 1 thành viên.
 
 ### 🎯 **Quy tắc Code Review**
