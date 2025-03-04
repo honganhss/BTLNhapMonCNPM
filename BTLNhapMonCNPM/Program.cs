@@ -1,8 +1,12 @@
+using BTLNhapMonCNPM.Interface;
+using BTLNhapMonCNPM.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<SanPhamIT, SanPhamImpl>();
+builder.Services.AddScoped<LoaiSanPhamIT, LoaiSanPhamImpl>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
