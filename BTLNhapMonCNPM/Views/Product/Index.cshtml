@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+@model Dictionary<string,object>
+<h1 class="text-lg text-primary">Danh sách sản phẩm</h1>
+@{
+    List<TblLoaiSanPham> danhMucSanPham = (List<TblLoaiSanPham>)Model["danhmuc"];
+
+    List<TblSanPham> ProductType = (List<TblSanPham>)Model["dsSP"];
+
+    List<TblSanPham> ProductPagination = (List<TblSanPham>)Model["dsSP"];
+
+    List<TblSanPham> AllProduct = (List<TblSanPham>)Model["dsSP"];
+
+    @if ((long)Model["danhmucid"] != 0)
+    {
+        long id = (long)Model["danhmucid"];
+        ProductType = AllProduct.Where(p => p.IMaLoaiSp == id).ToList();
+        ProductPagination = ProductType;
+    }
+    @if((int)Model["pagination"] != 0)
+    {
+        ProductPagination = ProductType.Slice((int)Model["pagination"] * 3 - 3, 3);
+    }
+    else
+    {
+        ProductPagination = ProductType.Slice(0, 3);
+    }
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- DANH MỤC SẢN PHẨM -->
+        <div class="col-md-3">
+            <h5 class="text-primary">Danh mục sản phẩm</h5>
+            <div class="list-group">
+                <a href="/product" class="list-group-item list-group-item-action @((long)Model["danhmucid"] == 0 ? "active" : "")">
+                    Tất cả sản phẩm
+                </a>
+                @foreach (var danhMuc in danhMucSanPham)
+                {
+                    <a href="/product/@danhMuc.IMaLoaiSp" class="list-group-item list-group-item-action @((long)Model["danhmucid"] == danhMuc.IMaLoaiSp ? "active" : "")">
+                        @danhMuc.STenLoai
+                    </a>
+                }
+            </div>
+        </div>
+
+        <!-- DANH SÁCH SẢN PHẨM -->
+        <div class="col-md-9">
+            <h5 class="text-success">Sản phẩm</h5>
+            <div class="row">
+                @if (ProductPagination.Any())
+                {
+                    @foreach (var sp in ProductPagination)
+                    {
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="@Url.Content(sp.SImageThuoc)" style="height : 200px; object-fit:cover" class="w-100" />
+                                    <h6 class="card-title">@sp.STen</h6>
+                                    <p class="card-text">Giá: <strong>@sp.FGiaBan.ToString("#,## VND")</strong></p>
+                                    <p class="card-text"><small class="text-muted">@sp.SDonViTinh</small></p>
+                                    <a href="#" class="btn btn-primary btn-sm">Chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">Không có sản phẩm nào.</p>
+                }
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    @for (int i = 1; i <= ProductType.Count / 3; i++)
+                    {
+                        // nếu là 0 thì active thằng 1 nếu không phải 0 thì active thằng được click
+                        <li class="page-item @((int)Model["pagination"] == i ? "active" : (int)Model["pagination"] == 0 && i==1 ? "active" : "" )"><a class="page-link" href="@Context.Request.Path?pagination=@i">@i</a></li>
+                    }
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+</div>
+
+
