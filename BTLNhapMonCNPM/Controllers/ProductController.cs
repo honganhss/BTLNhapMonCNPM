@@ -1,22 +1,26 @@
 ﻿using BTLNhapMonCNPM.Interface;
 using BTLNhapMonCNPM.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace BTLNhapMonCNPM.Controllers
 {
     public class ProductController : Controller
     {
 
-        private readonly LoaiSanPhamIT _danhmuc;
-        private readonly SanPhamIT _sanpham;
+		private readonly LoaiSanPhamIT _danhmuc;
+		private readonly SanPhamIT _sanpham;
+		private readonly NhaCCIT _nhacc;
 
-        public ProductController(LoaiSanPhamIT danhmuc, SanPhamIT sanpham)
-        {
-            _danhmuc = danhmuc;
-            _sanpham = sanpham;
-        }
+		public ProductController(LoaiSanPhamIT danhmuc, SanPhamIT sanpham, NhaCCIT nhacc)
+		{
+			_danhmuc = danhmuc;
+			_sanpham = sanpham;
+			_nhacc = nhacc;
+		}
 
-        [Route("product/{id?}")]
+		[Route("product/{id?}")]
         public IActionResult Index(long id,int pagination)
         {
             Console.WriteLine(pagination);
@@ -29,5 +33,26 @@ namespace BTLNhapMonCNPM.Controllers
             list["dsSP"] = listSP;
             return View(list);
         }
-    }
+
+		[HttpGet]
+		[Route("product/add")]
+		public IActionResult Add()
+		{
+			var suppliers = _nhacc.getAllNhaCC();
+			var productTypes = _danhmuc.getAllDanhMuc();
+			ViewBag.Suppliers = new SelectList(suppliers, "IMaNcc", "STenNcc");
+			ViewBag.ProductTypes = new SelectList(productTypes, "IMaLoaiSp", "STenLoai");
+			return View(new TblSanPham());
+		}
+
+
+		[HttpPost]
+		[Route("product/add")]
+		public IActionResult AddProduct(TblSanPham product)
+		{
+			_sanpham.AddSanPham(product);
+			return RedirectToAction("Index");
+		}
+
+	}
 }

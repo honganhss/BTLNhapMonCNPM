@@ -364,7 +364,7 @@ namespace BTLNhapMonCNPM.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("bBietTru");
 
-                    b.Property<bool?>("BCanKeDon")
+                    b.Property<bool>("BCanKeDon")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false)
