@@ -13,5 +13,12 @@ namespace BTLNhapMonCNPM.Repository
             List<TblSanPham> list = (from s in pharmacyDb.TblSanPhams select s).ToList();
             return list;
         }
-    }
+
+		public void AddSanPham(TblSanPham sanPham)
+		{
+			sanPham.IMaSp = 0;
+			pharmacyDb.TblSanPhams.Add(sanPham);
+			pharmacyDb.SaveChanges();
+		}
+	}
 }

@@ -43,7 +43,7 @@ public partial class PharmacyDbContext : DbContext
     public virtual DbSet<TblThuocKeDon> TblThuocKeDons { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Data Source=BING-CHILLING;Initial Catalog=PharmacyDB;User ID=sa;Password=1234;Encrypt=True;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-U2K64B8\\SQLEXPRESS;Database=PharmacyDB;Trusted_Connection=True;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
