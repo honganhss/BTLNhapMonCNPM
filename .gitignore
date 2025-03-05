@@ -1,0 +1,7 @@
+BTLNhapMonCNPM/bin/
+BTLNhapMonCNPM/obj/
+*.pdb
+*.exe
+*.dll
+*.cache
+*.sourcelink.json
