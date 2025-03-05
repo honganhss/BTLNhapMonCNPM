@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Add Product";
+}
+
+<h3 class="mb-4">Add Product</h3>
+
+<form asp-action="AddProduct" method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label for="STen" class="form-label">Name:</label>
+        <input type="text" id="STen" name="STen" class="form-control" required />
+        <div class="invalid-feedback">
+            Please provide a name.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="SDangThuoc" class="form-label">Form:</label>
+        <input type="text" id="SDangThuoc" name="SDangThuoc" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="SDonViTinh" class="form-label">Unit:</label>
+        <input type="text" id="SDonViTinh" name="SDonViTinh" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="ISoLuong" class="form-label">Quantity:</label>
+        <input type="number" id="ISoLuong" name="ISoLuong" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="SImageThuoc" class="form-label">Image URL:</label>
+        <input type="text" id="SImageThuoc" name="SImageThuoc" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="FGiaNhap" class="form-label">Purchase Price:</label>
+        <input type="number" step="0.01" id="FGiaNhap" name="FGiaNhap" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="FGiaBan" class="form-label">Sale Price:</label>
+        <input type="number" step="0.01" id="FGiaBan" name="FGiaBan" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="SCachSuDung" class="form-label">Usage:</label>
+        <input type="text" id="SCachSuDung" name="SCachSuDung" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="SDieuKienBaoQuan" class="form-label">Storage Conditions:</label>
+        <input type="text" id="SDieuKienBaoQuan" name="SDieuKienBaoQuan" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="IMaNcc" class="form-label">Supplier:</label>
+        <select id="IMaNcc" name="IMaNcc" class="form-select" asp-items="ViewBag.Suppliers"></select>
+    </div>
+    <div class="mb-3">
+        <label for="SHanSuDung" class="form-label">Expiration Date:</label>
+        <input type="text" id="SHanSuDung" name="SHanSuDung" class="form-control" />
+    </div>
+    <div class="mb-3 form-check">
+        <input type="hidden" name="BBietTru" value="false" />
+        <input type="checkbox" id="BBietTru" name="BBietTru" value="true" class="form-check-input" />
+        <label for="BBietTru" class="form-check-label">Special</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="hidden" name="BThuHoi" value="false" />
+        <input type="checkbox" id="BThuHoi" name="BThuHoi" value="true" class="form-check-input" />
+        <label for="BThuHoi" class="form-check-label">Recalled</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="hidden" name="BCanKeDon" value="false" />
+        <input type="checkbox" id="BCanKeDon" name="BCanKeDon" value="true" class="form-check-input" />
+        <label for="BCanKeDon" class="form-check-label">Prescription Required</label>
+    </div>
+    <div class="mb-3">
+        <label for="IMaLoaiSp" class="form-label">Product Type:</label>
+        <select id="IMaLoaiSp" name="IMaLoaiSp" class="form-select" asp-items="ViewBag.ProductTypes"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>
