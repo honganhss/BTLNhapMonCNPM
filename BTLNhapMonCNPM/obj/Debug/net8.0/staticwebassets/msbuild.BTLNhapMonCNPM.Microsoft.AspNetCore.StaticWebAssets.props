@@ -1,22 +1,22 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BTLNhapMonCNPM.dzoqr8c1cz.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BTLNhapMonCNPM.8ou8k5f5mk.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>BTLNhapMonCNPM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BTLNhapMonCNPM</BasePath>
-      <RelativePath>BTLNhapMonCNPM.dzoqr8c1cz.bundle.scp.css</RelativePath>
+      <RelativePath>BTLNhapMonCNPM.8ou8k5f5mk.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>dzoqr8c1cz</Fingerprint>
-      <Integrity>+Ru3CUyQGNg2q4Wpsokr9StaS+uVEfH8PNrf+DaacS4=</Integrity>
+      <Fingerprint>8ou8k5f5mk</Fingerprint>
+      <Integrity>SEWr/aZDdZtCLC+vQSIggYf5/MQ0LMUHXO7Krwb+XH0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BTLNhapMonCNPM.dzoqr8c1cz.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BTLNhapMonCNPM.8ou8k5f5mk.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>
