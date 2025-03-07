@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTLNhapMonCNPM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc10b6000e00e9a10d3969809321f711ca953ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f2a6145cdfc208eb12efc211ff25407613e1f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BTLNhapMonCNPM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BTLNhapMonCNPM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
