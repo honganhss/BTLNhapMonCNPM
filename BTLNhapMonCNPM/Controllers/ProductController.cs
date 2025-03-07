@@ -32,26 +32,5 @@ namespace BTLNhapMonCNPM.Controllers
             list["dsSP"] = listSP;
             return View(list);
         }
-
-		[HttpGet]
-		[Route("product/add")]
-		public IActionResult Add()
-		{
-			var suppliers = _nhacc.getAllNhaCC();
-			var productTypes = _danhmuc.getAllDanhMuc();
-			ViewBag.Suppliers = new SelectList(suppliers, "IMaNcc", "STenNcc");
-			ViewBag.ProductTypes = new SelectList(productTypes, "IMaLoaiSp", "STenLoai");
-			return View(new TblSanPham());
-		}
-
-
-		[HttpPost]
-		[Route("product/add")]
-		public IActionResult AddProduct(TblSanPham product)
-		{
-			_sanpham.AddSanPham(product);
-			return RedirectToAction("Index");
-		}
-
 	}
 }
