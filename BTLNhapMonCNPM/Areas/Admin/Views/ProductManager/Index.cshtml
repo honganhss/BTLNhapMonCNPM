@@ -14,19 +14,23 @@
 
     List<TblSanPham> AllProduct = (List<TblSanPham>)Model["dsSP"];
 
-    @if ((long)Model["danhmucid"] != 0)
+    if ((long)Model["danhmucid"] != 0)
     {
         long id = (long)Model["danhmucid"];
         ProductType = AllProduct.Where(p => p.IMaLoaiSp == id).ToList();
         ProductPagination = ProductType;
     }
-    @if ((int)Model["pagination"] != 0)
+
+    int pageNumber = (int)Model["pagination"];
+    int pageSize = 3;
+
+    if (pageNumber != 0)
     {
-        ProductPagination = ProductType.Slice((int)Model["pagination"] * 3 - 3, 3);
+        ProductPagination = ProductType.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
     }
     else
     {
-        ProductPagination = ProductType.Slice(0, 3);
+        ProductPagination = ProductType.Take(pageSize).ToList();
     }
 }
 
@@ -56,7 +60,7 @@
                 </select>
             </div>
             <div class="col-md-6 text-end">
-                <button class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#addProductModal">➕ Thêm sản phẩm</button>
+                <a href="/admin/product/add" class="btn btn-success mt-4">➕ Thêm sản phẩm</a>
             </div>
         </div>
 
