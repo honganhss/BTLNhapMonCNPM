@@ -3,9 +3,10 @@ using BTLNhapMonCNPM.Models;
 
 namespace BTLNhapMonCNPM.Repository
 {
-    public class NhaCCImpl : NhaCCIT
+	// ReSharper disable once InconsistentNaming
+	public class NhaCCImpl : NhaCCIT
     {
-        PharmacyDbContext PharmacyDb = PharmacyDbContext.getDbContext();
+	    PharmacyDbContext PharmacyDb = PharmacyDbContext.getDbContext();
 
 		public List<TblNhaCungCap> getAllNhaCC()
 		{

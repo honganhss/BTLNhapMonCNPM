@@ -1,0 +1,56 @@
+﻿@using BTLNhapMonCNPM.Models
+
+@{
+    ViewData["Title"] = "Index";
+}
+@model List<TblKhachHang>
+
+@{
+    ViewData["Title"] = "Quản lý khách hàng";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Quản lý khách hàng</h2>
+
+    <table class="table table-striped table-hover">
+        <thead class="table-primary">
+            <tr>
+                <th>#</th>
+                <th>Họ Tên</th>
+                <th>Tên Đăng Nhập</th>
+                <th>Email</th>
+                <th>SĐT</th>
+                <th>Ngày Tạo</th>
+                <th class="text-center">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var khachHang in Model)
+            {
+                <tr>
+                    <td>@khachHang.IMaKh</td>
+                    <td>@khachHang.SHoTen</td>
+                    <td>@khachHang.STenDangNhap</td>
+                    <td>@khachHang.SEmail</td>
+                    <td>@khachHang.SSdt</td>
+                    <td>@khachHang.DNgayTao?.ToString("dd/MM/yyyy")</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@khachHang.IMaKh" class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil-square"></i> Cập nhật
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@khachHang.IMaKh" class="btn btn-danger btn-sm"
+                           onclick="return confirm('Bạn có chắc chắn muốn xóa khách hàng này?');">
+                            <i class="bi bi-trash"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-action="Create" class="btn btn-success">
+        <i class="bi bi-person-plus"></i> Thêm Khách Hàng
+    </a>
+</div>
+
+

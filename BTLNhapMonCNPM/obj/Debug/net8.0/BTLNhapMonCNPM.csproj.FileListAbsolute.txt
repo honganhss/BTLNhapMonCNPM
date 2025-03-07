@@ -297,4 +297,5 @@ D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\bin\Debug\net8.0\runtimes\unix\lib\net8.0\S
 D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\ASP.net\BTLNHAPMON\BTLNhapMonCNPM\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

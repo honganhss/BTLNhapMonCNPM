@@ -23,7 +23,6 @@ namespace BTLNhapMonCNPM.Controllers
 		[Route("product/{id?}")]
         public IActionResult Index(long id,int pagination)
         {
-            Console.WriteLine(pagination);
             List<TblLoaiSanPham> listLoaiSP = _danhmuc.getAllDanhMuc();
             List<TblSanPham> listSP = _sanpham.getAllSanPham();
             Dictionary<String,object> list = new Dictionary<string, object>();

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            background-color: #007bff;
+            padding-top: 20px;
+            transition: all 0.3s;
+        }
+
+            .sidebar a {
+                color: white;
+                padding: 10px;
+                display: block;
+                text-decoration: none;
+            }
+
+                .sidebar a:hover {
+                    background-color: #0056b3;
+                }
+
+        /* Nội dung */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        /* Ẩn sidebar trên mobile */
+        @@media (max-width: 768px) {
+            .sidebar
+
+        {
+            width: 0;
+            overflow: hidden;
+        }
+
+        .content {
+            margin-left: 0;
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar bg-primary" id="sidebar">
+        <h4 class="text-center text-white">Admin Panel</h4>
+        <a href="/admin/product">Quản lý sản phẩm</a>
+        <div class="list-group" style="border: none">
+            <a href="#accountMenu" class="list-group-item bg-primary text-white border-0" data-bs-toggle="collapse" aria-expanded="false">
+                Quản lý tài khoản
+            </a>
+            <span class="bi bi-chevron-down"></span>
+            <div class="collapse" id="accountMenu">
+                <a href="/admin/account/customer" class="list-group-item list-group-item-action bg-primary text-white border-0">Quản lý tài khoản khách hàng</a>
+                <a href="/admin/account/employee" class="list-group-item list-group-item-action  bg-primary text-white border-0">Quản lý tài khoản nhân viên</a>
+            </div>
+        </div>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <!-- Nút mở sidebar -->
+            <button class="btn btn-primary " id="sidebarToggle">
+                ☰
+            </button>
+
+            <a class="navbar-brand text-primary" href="#">Hồng Vân <sup>GPP</sup></a>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("sidebarToggle").addEventListener("click", function () {
+            let sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                sidebar.style.display = "none";
+                document.querySelector(".content").style.marginLeft = "0";
+            } else {
+                sidebar.style.width = "250px";
+                sidebar.style.display = "block";
+                document.querySelector(".content").style.marginLeft = "250px";
+            }
+        });
+    </script>
+
+</body>
+</html>
