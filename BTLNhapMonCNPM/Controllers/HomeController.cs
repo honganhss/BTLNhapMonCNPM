@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BTLNhapMonCNPM.Models;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 namespace BTLNhapMonCNPM.Controllers;
 
@@ -16,6 +17,16 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
+    }
+
+    public IActionResult Register()
+    {
+        return View();
+    }
+
+    public IActionResult RegisterForm(Register model)
+    {
+        return RedirectToAction("Register");
     }
 
     public IActionResult Privacy()

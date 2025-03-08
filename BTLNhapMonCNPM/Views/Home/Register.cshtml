@@ -1,0 +1,24 @@
+@model BTLNhapMonCNPM.Models.TblKhachHang
+
+@{
+    ViewData["Title"] = "Đăng ký";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Đăng ký</h1>
+</div>
+<form asp-action="RegisterForm" asp-controller="Home">
+    <label class="mt-4">Họ và tên:</label>
+    <input class="form-control" type="text" asp-for="SHoTen" />
+    <label class="mt-4">Tên Đăng nhập:</label>
+    <input class="form-control" type="text" asp-for="STenDangNhap" />
+    <label class="mt-4">Mật khẩu:</label>
+    <input class="form-control" type="password" asp-for="SMatKhau" />
+    <label class="mt-4">Nhập lại mật khẩu:</label>
+    <input class="form-control" type="password" />
+    <label class="mt-4">Email:</label>
+    <input class="form-control" type="text" asp-for="SEmail" />
+    <label class="mt-4">Số điện thoại:</label>
+    <input class="form-control" type="text" asp-for="SSdt" />
+    <button class="btn btn-primary mt-4" type="submit">Đăng ký</button>
+</form>
