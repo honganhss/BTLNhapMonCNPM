@@ -20,5 +20,11 @@ namespace BTLNhapMonCNPM.Repository
 			pharmacyDb.TblSanPhams.Add(sanPham);
 			pharmacyDb.SaveChanges();
 		}
+
+        public void UpdateSanPham(TblSanPham sanPham)
+        {
+            pharmacyDb.TblSanPhams.Update(sanPham);
+            pharmacyDb.SaveChanges();
+        }
 	}
 }

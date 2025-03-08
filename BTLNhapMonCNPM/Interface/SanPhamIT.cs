@@ -7,5 +7,6 @@ namespace BTLNhapMonCNPM.Interface
 
         public List<TblSanPham> getAllSanPham();
         public void AddSanPham(TblSanPham sanPham);
+        public void UpdateSanPham(TblSanPham sanPham);
 	}
 }

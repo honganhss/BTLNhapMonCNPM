@@ -5,3 +5,4 @@ BTLNhapMonCNPM/obj/
 *.dll
 *.cache
 *.sourcelink.json
+.vs/
