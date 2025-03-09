@@ -15,6 +15,8 @@ builder.Services.AddScoped<NhaCCIT, NhaCCImpl>();
 builder.Services.AddScoped<CustomerAccountIT, CustomerAccountImpl>();
 builder.Services.AddScoped<EmployeeAccountIT, EmployeeAccountImpl>();
 // Add DbContext
+builder.Services.AddDbContext<PharmacyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
