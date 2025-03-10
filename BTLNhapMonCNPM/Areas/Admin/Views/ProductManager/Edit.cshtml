@@ -1,0 +1,117 @@
+﻿@using BTLNhapMonCNPM.Models;
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+}
+@model Dictionary<string,object>
+@{
+    List<TblLoaiSanPham> danhMucSanPham = (List<TblLoaiSanPham>)Model["danhmuc"];
+
+    TblSanPham selectedProduct = (TblSanPham)Model["sanpham"];
+}
+
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-4">Chỉnh sửa thông tin sản phẩm</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="EditProduct" method="post" class="needs-validation" novalidate asp-controller="ProductManager">
+                        <input type="hidden" name="IMaSp" value="@selectedProduct.IMaSp" />
+                        <div class="mb-3">
+                            <label for="STen" class="form-label">Tên thuốc:</label>
+                            <input type="text" id="STen" name="STen" class="form-control" required value="@selectedProduct.STen"/>
+                            <div class="invalid-feedback">
+                                Hãy cung cấp tên thuốc
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="SDangThuoc" class="form-label">Dạng thuốc:</label>
+                            <input type="text" id="SDangThuoc" name="SDangThuoc" class="form-control" value="@selectedProduct.SDangThuoc" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="SDonViTinh" class="form-label">Đơn vị tính:</label>
+                            <input type="text" id="SDonViTinh" name="SDonViTinh" class="form-control" value="@selectedProduct.SDonViTinh" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="ISoLuong" class="form-label">Số lượng:</label>
+                            <input type="number" id="ISoLuong" name="ISoLuong" class="form-control" value="@selectedProduct.ISoLuong" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="SImageThuoc" class="form-label">URL hình ảnh:</label>
+                            <input type="text" id="SImageThuoc" name="SImageThuoc" class="form-control" value="@selectedProduct.SImageThuoc" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="FGiaNhap" class="form-label">Giá nhập:</label>
+                            <input type="number" step="0.01" id="FGiaNhap" name="FGiaNhap" class="form-control" value="@selectedProduct.FGiaNhap" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="FGiaBan" class="form-label">Giá bán:</label>
+                            <input type="number" step="0.01" id="FGiaBan" name="FGiaBan" class="form-control" value="@selectedProduct.FGiaBan" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="SCachSuDung" class="form-label">Cách sử dụng:</label>
+                            <input type="text" id="SCachSuDung" name="SCachSuDung" class="form-control" value="@selectedProduct.SCachSuDung" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="SDieuKienBaoQuan" class="form-label">Điều kiện bảo quản:</label>
+                            <input type="text" id="SDieuKienBaoQuan" name="SDieuKienBaoQuan" class="form-control" value="@selectedProduct.SDieuKienBaoQuan" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="IMaNcc" class="form-label">Nhà cung cấp:</label>
+                            <select id="IMaNcc" name="IMaNcc" class="form-select" asp-for="@selectedProduct.IMaNcc" asp-items="ViewBag.Suppliers"></select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="SHanSuDung" class="form-label">Hạn sử dụng:</label>
+                            <input type="text" id="SHanSuDung" name="SHanSuDung" class="form-control" value="@selectedProduct.SHanSuDung"/>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="hidden" name="BBietTru" value="false" />
+                            <input type="checkbox" id="BBietTru" name="BBietTru" value="true" class="form-check-input" @((bool)selectedProduct.BBietTru ? "checked" : "") />
+                            <label for="BBietTru" class="form-check-label">Biệt trữ </label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="hidden" name="BThuHoi" value="false" />
+                            <input type="checkbox" id="BThuHoi" name="BThuHoi" value="true" class="form-check-input" @((bool)selectedProduct.BThuHoi ? "checked" : "") />
+                            <label for="BThuHoi" class="form-check-label">Thu hồi</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="hidden" name="BCanKeDon" value="false" />
+                            <input type="checkbox" id="BCanKeDon" name="BCanKeDon" value="true" class="form-check-input" @((bool)selectedProduct.BCanKeDon ? "checked" : "") />
+                            <label for="BCanKeDon" class="form-check-label">Cần kê đơn</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="IMaLoaiSp" class="form-label">Loại sản phẩm:</label>
+                            <select id="IMaLoaiSp" name="IMaLoaiSp" class="form-select" asp-for="@selectedProduct.IMaLoaiSp" asp-items="ViewBag.ProductTypes"></select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Cập nhật sản phẩm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict'
+
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+
