@@ -44,7 +44,7 @@ public partial class PharmacyDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
-        => optionsBuilder.UseSqlServer("Data Source=BING-CHILLING;Initial Catalog=PharmacyDB;User ID=sa;Password=1234;Encrypt=True;TrustServerCertificate=True"); //dan truong's server
+        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-EMOA5K1J;Initial Catalog=PharmacyDB;User ID=sa;Password=1234;Encrypt=True;TrustServerCertificate=True"); //dan truong's server
 
 
 
