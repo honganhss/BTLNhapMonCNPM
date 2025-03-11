@@ -1,8 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\BTLNhapMonCNPM"
   ],
   "SelectedNode": "\\BTLNhapMonCNPM",
+=======
+    "\\BTLNhapMonCNPM",
+    "\\BTLNhapMonCNPM\\Areas",
+    "\\BTLNhapMonCNPM\\Areas\\Admin",
+    "\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers"
+  ],
+  "SelectedNode": "\\BTLNhapMonCNPM.sln",
+>>>>>>> f0016073c3ba06dade0b36c8c948b748e065d120
   "PreviewInSolutionExplorer": false
 }
