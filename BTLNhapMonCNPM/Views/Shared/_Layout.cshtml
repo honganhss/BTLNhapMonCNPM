@@ -29,10 +29,12 @@
                         <li class="nav-item"><a class="nav-link" href="/Product">Sản phẩm</a></li>
                     </ul>
 
-                    <form class="d-flex">
-                        <input type="text" id="searchInput" class="form-control me-2" placeholder="Nhập tên thuốc, mã hoặc nhà cung cấp..." autocomplete="off">
-                        <button class="btn btn-outline-primary" type="submit">Tìm</button>
-                    </form>
+                    <div class="container mt-0" style="width:35%; margin-right:5px">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Nhập tên thuốc, mã hoặc nhà cung cấp..." autocomplete="off">
+                            <div class="search-results" id="searchResults"></div>
+                        </div>
+                    </div>
                     @if(username == null)
                     {
                         <ul class="navbar-nav ms-3">

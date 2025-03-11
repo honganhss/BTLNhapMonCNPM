@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <img src="${item.image || 'default-image.jpg'}" alt="${item.tenThuoc}" class="product-img">
                             <div class="product-info">
                                 <strong>${item.tenThuoc}</strong>
-                                <p>Giá: <span class="text-danger">${item.giaBan} VNĐ</span></p>
+                                <p>Giá: <span class="text-danger">${item.giaBan.toLocaleString('vi-VN').replace(/\./g, ',')} VNĐ</span></p>
                                 <p>Số lượng: <span class="text-success">${item.soLuong}</span></p>
                             </div>
                         `;
