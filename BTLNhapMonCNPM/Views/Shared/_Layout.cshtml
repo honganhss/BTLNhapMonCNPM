@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    string username = HttpContextAccessor.HttpContext.Session.GetString("Username") ?? null;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,13 +13,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BTLNhapMonCNPM.styles.css" asp-append-version="true" />
-    
+
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand text-primary" href="#">Hồng Vân <sup class="text-secondary">GPP</sup></a>
+                <a class="navbar-brand text-primary" href="/">Hồng Vân <sup class="text-secondary">GPP</sup></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,10 +32,20 @@
                         <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
                         <button class="btn btn-outline-primary" type="submit">Tìm</button>
                     </form>
-                    <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link" href="#">Đăng nhập</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Register">Đăng ký</a></li>
-                    </ul>
+                    @if(username == null)
+                    {
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item"><a class="nav-link" href="/signin">Đăng nhập</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Register">Đăng ký</a></li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item" style="margin-block : auto">Xin chào @username</li>
+                            <li class="nav-item"><a class="nav-link" href="/signout">Đăng xuất</a></li>
+                        </ul>
+                    }
                 </div>
             </div>
         </nav>

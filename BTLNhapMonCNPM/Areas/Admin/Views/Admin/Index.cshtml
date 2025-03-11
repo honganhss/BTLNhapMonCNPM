@@ -3,6 +3,10 @@
     ViewData["Title"] = "Admin nhé";
 }
 
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
-<h1>Đây trang admin</h1>
+@{
+    string username = HttpContextAccessor.HttpContext.Session.GetString("UsernameAdmin") ?? null;
+}
+<h1>Xin chào @username</h1>
 

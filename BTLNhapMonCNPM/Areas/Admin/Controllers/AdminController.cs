@@ -11,6 +11,14 @@ public class AdminController : Controller
     [Route("admin")]
     public IActionResult Index()
     {
-        return View();
+        string usernameAdmin = HttpContext.Session.GetString("UsernameAdmin");
+        if (usernameAdmin != null)
+        {
+            return View();
+        }
+        else
+        {
+            return Redirect("/admin/signin");
+        }
     }
 }

@@ -14,11 +14,13 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [Route("/")]
     public IActionResult Index()
     {
         return View();
     }
 
+    [Route("/register")]
     public IActionResult Register()
     {
         return View();
