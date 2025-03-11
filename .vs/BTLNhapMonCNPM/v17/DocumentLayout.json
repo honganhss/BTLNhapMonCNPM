@@ -1,46 +1,46 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "D:\\ASP.net\\btnhapmon2\\",
+  "WorkspaceRootPath": "D:\\ASP.net\\btnm3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\areas\\admin\\views\\signinadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\signinadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\areas\\admin\\controllers\\signinadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\controllers\\signinadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnhapmon2\\btlnhapmoncnpm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-=======
-  "WorkspaceRootPath": "D:\\[hoc]\\BTLNhapMonCNPM\\",
-  "Documents": [
+    },
     {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\[hoc]\\btlnhapmoncnpm\\btlnhapmoncnpm\\models\\pharmacydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\models\\pharmacydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\models\\pharmacydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\[hoc]\\btlnhapmoncnpm\\btlnhapmoncnpm\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\controllers\\searchproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\controllers\\searchproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\[hoc]\\btlnhapmoncnpm\\btlnhapmoncnpm\\controllers\\searchproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\controllers\\searchproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> f0016073c3ba06dade0b36c8c948b748e065d120
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\areas\\admin\\views\\signinadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\signinadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\areas\\admin\\controllers\\signinadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\controllers\\signinadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|d:\\asp.net\\btnm3\\btlnhapmoncnpm\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA8A1EE7-E8B0-48CF-92E1-8D3676B612E8}|BTLNhapMonCNPM\\BTLNhapMonCNPM.csproj|solutionrelative:btlnhapmoncnpm\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,129 +50,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T04:25:13.337Z",
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PharmacyDbContext.cs",
-              "DocumentMoniker": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
-              "ToolTip": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowC4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T16:49:46.595Z",
-              "IsPinned": true,
->>>>>>> f0016073c3ba06dade0b36c8c948b748e065d120
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T04:26:33.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T04:26:19.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PharmacyDbContext.cs",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Models\\PharmacyDbContext.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T04:25:18.277Z",
+              "WhenOpened": "2025-03-11T04:57:45.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SignInAdminController.cs",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBEAAAAcAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Program.cs",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Program.cs",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Program.cs",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T04:21:07.338Z",
+              "WhenOpened": "2025-03-11T04:55:44.374Z",
               "EditorCaption": ""
-=======
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:56:43.369Z"
->>>>>>> f0016073c3ba06dade0b36c8c948b748e065d120
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\appsettings.Development.json",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\appsettings.Development.json",
+              "RelativeToolTip": "BTLNhapMonCNPM\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T04:55:38.868Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
+              "Title": "SearchProductController.cs",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:54:32.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\SignInAdmin\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T04:54:19.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T04:54:19.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T04:54:19.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:54:19.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignInAdminController.cs",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
+              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
+              "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Controllers\\SignInAdminController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:54:19.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\ASP.net\\btnhapmon2\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP.net\\btnm3\\BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BTLNhapMonCNPM\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T04:20:59.62Z",
-              "EditorCaption": ""
-=======
-              "Title": "SearchProductController.cs",
-              "DocumentMoniker": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
-              "RelativeDocumentMoniker": "BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
-              "ToolTip": "D:\\[hoc]\\BTLNhapMonCNPM\\BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
-              "RelativeToolTip": "BTLNhapMonCNPM\\Controllers\\SearchProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:49:19.95Z"
->>>>>>> f0016073c3ba06dade0b36c8c948b748e065d120
+              "WhenOpened": "2025-03-11T04:54:19.599Z"
             }
           ]
         }
