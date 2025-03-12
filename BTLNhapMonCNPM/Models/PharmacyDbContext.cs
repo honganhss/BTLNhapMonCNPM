@@ -44,13 +44,13 @@ public partial class PharmacyDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
-        // => optionsBuilder.UseSqlServer("Data Source=BING-CHILLING;Initial Catalog=PharmacyDB;User ID=sa;Password=1234;Encrypt=True;TrustServerCertificate=True"); //dan truong's server
-        => optionsBuilder.UseSqlServer("Server=LAPTOP-EMOA5K1J;Database=PharmacyDB;Trusted_Connection=True;TrustServerCertificate=True"); //dan truong's server
+		// => optionsBuilder.UseSqlServer("Data Source=BING-CHILLING;Initial Catalog=PharmacyDB;User ID=sa;Password=1234;Encrypt=True;TrustServerCertificate=True"); //dan truong's server
+		// => optionsBuilder.UseSqlServer("Server=LAPTOP-EMOA5K1J;Database=PharmacyDB;Trusted_Connection=True;TrustServerCertificate=True"); //dan truong's server
+		=> optionsBuilder.UseSqlServer("Server=DESKTOP-U2K64B8\\SQLEXPRESS;Database=PharmacyDB;Trusted_Connection=True;TrustServerCertificate=True"); //dan truong's server
 
 
 
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<TblHoaDon>(entity =>
         {

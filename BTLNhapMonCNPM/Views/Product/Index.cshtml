@@ -51,9 +51,9 @@
         <div class="col-md-9">
             <h5 class="text-success">Sản phẩm</h5>
             <div class="row">
-                @if (ProductPagination.Any())
+                @if (AllProduct.Any())
                 {
-                    @foreach (var sp in ProductPagination)
+                    @foreach (var sp in AllProduct)
                     {
                         <div class="col-md-4 mb-3">
                             <div class="card">
@@ -76,7 +76,7 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    @for (int i = 1; i <= ProductType.Count / 3; i++)
+                    @for (int i = 1; i <= AllProduct.Count / 3; i++)
                     {
                         // nếu là 0 thì active thằng 1 nếu không phải 0 thì active thằng được click
                         <li class="page-item @((int)Model["pagination"] == i ? "active" : (int)Model["pagination"] == 0 && i==1 ? "active" : "" )"><a class="page-link" href="@Context.Request.Path?pagination=@i">@i</a></li>

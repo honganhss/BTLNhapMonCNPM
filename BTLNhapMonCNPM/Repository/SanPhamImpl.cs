@@ -26,5 +26,11 @@ namespace BTLNhapMonCNPM.Repository
             pharmacyDb.TblSanPhams.Update(sanPham);
             pharmacyDb.SaveChanges();
         }
+
+		public void DeleteSanPham(TblSanPham sanpham)
+		{
+			pharmacyDb.TblSanPhams.Remove(sanpham);
+			pharmacyDb.SaveChanges();
+		}
 	}
 }

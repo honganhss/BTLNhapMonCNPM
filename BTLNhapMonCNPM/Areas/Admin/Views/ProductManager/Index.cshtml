@@ -75,7 +75,9 @@
                             <h5 class="card-title">@product.STen</h5>
                             <p class="card-text">Giá bán: @product.FGiaBan.ToString("N0") VND</p>
                             <a asp-action="Edit" asp-route-id="@product.IMaSp" class="btn btn-warning btn-sm">✏ Sửa</a>
-                            <a asp-action="Delete" asp-route-id="@product.IMaSp" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?')">❌ Xóa</a>
+                            <form asp-action="Delete" asp-route-id="@product.IMaSp" method="post" onsubmit="return confirm('Bạn có chắc muốn xóa?');" style="display:inline;">
+                                <button type="submit" class="btn btn-danger btn-sm">❌ Xóa</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -109,7 +111,7 @@
          });
 
      </script>
-    <a asp-controller="SanPham" asp-action="XoaSanPham" class="btn btn-danger">Xóa sản phẩm</a>
+    @* <a asp-controller="SanPham" asp-action="XoaSanPham" class="btn btn-danger">Xóa sản phẩm</a> *@
 
 </body>
 </html>
