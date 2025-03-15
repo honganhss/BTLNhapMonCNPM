@@ -32,8 +32,10 @@ namespace BTLNhapMonCNPM.Controllers
         {
             if (sign.verify(username, password) != null)
             {
-
                 HttpContext.Session.SetString("Username", sign.verify(username, password).SHoTen);
+                string makh = "" + sign.verify(username, password).IMaKh;
+                Console.WriteLine(makh);
+                HttpContext.Session.SetString("UsernameID", makh);
                 return Redirect("/");
             }
             else

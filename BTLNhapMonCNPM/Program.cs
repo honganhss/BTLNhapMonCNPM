@@ -1,4 +1,4 @@
-using BTLNhapMonCNPM.Areas.Admin.Interfaces;
+﻿using BTLNhapMonCNPM.Areas.Admin.Interfaces;
 using BTLNhapMonCNPM.Areas.Admin.Repository;
 using BTLNhapMonCNPM.Interface;
 using BTLNhapMonCNPM.Models;
@@ -6,7 +6,7 @@ using BTLNhapMonCNPM.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddSession();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<SanPhamIT, SanPhamImpl>();

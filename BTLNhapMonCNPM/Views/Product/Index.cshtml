@@ -21,11 +21,16 @@
     }
     @if((int)Model["pagination"] != 0)
     {
-        ProductPagination = ProductType.Slice((int)Model["pagination"] * 3 - 3, 3);
+        if (ProductType.Count < 3)
+        {
+            ProductPagination = ProductType;
+        }
+        else ProductPagination = ProductType.Slice((int)Model["pagination"] * 3 - 3, 3);
     }
     else
     {
-        ProductPagination = ProductType.Slice(0, 3);
+        if (ProductType.Count >= 3) ProductPagination = ProductType.Slice(0, 3);
+        else ProductPagination = ProductType;
     }
 }
 
@@ -63,6 +68,9 @@
                                     <p class="card-text">Giá: <strong>@sp.FGiaBan.ToString("#,## VND")</strong></p>
                                     <p class="card-text"><small class="text-muted">@sp.SDonViTinh</small></p>
                                     <a href="#" class="btn btn-primary btn-sm">Chi tiết</a>
+                                    <button class="btn btn-primary add-to-cart btn-sm" data-id="@sp.IMaSp" data-name="@sp.STen" data-price="@sp.FGiaBan">
+                                        Thêm vào giỏ hàng
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +84,16 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    @for (int i = 1; i <= ProductType.Count / 3; i++)
+                    @{
+
+                        int numberpage = ProductType.Count / 3;
+                        if(numberpage == 0)
+                        {
+                            numberpage = 1;
+                        }
+                        
+                    }
+                    @for (int i = 1; i <= numberpage; i++)
                     {
                         // nếu là 0 thì active thằng 1 nếu không phải 0 thì active thằng được click
                         <li class="page-item @((int)Model["pagination"] == i ? "active" : (int)Model["pagination"] == 0 && i==1 ? "active" : "" )"><a class="page-link" href="@Context.Request.Path?pagination=@i">@i</a></li>
@@ -88,5 +105,39 @@
         
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        updateCartCount();
+
+        // Xử lý sự kiện click "Thêm vào giỏ hàng"
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", function () {
+                let productId = this.getAttribute("data-id");
+                let productName = this.getAttribute("data-name");
+                let productPrice = this.getAttribute("data-price");
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                // Kiểm tra sản phẩm đã tồn tại chưa
+                let existingProduct = cart.find(p => p.id == productId);
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                updateCartCount();
+            });
+        });
+
+        // Cập nhật số lượng giỏ hàng
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById("cartCount").textContent = totalQuantity;
+        }
+    });
+</script>
 
 

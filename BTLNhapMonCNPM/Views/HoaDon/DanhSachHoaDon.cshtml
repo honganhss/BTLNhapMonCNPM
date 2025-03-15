@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "DanhSachHoaDon";
+}
+
+@model List<TblHoaDon>
+
+@{
+    ViewData["Title"] = "Danh Sách Hóa Đơn";
+    int maKhachHang = ViewBag.KhachHangId;
+}
+
+<h2>Danh Sách Hóa Đơn</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Hóa Đơn</th>
+            <th>Thời Gian</th>
+            <th>Tổng Giá Trị</th>
+            <th>Ghi Chú</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hoaDon in Model)
+        {
+            <tr>
+                <td>@hoaDon.IMaHd</td>
+                <td>@hoaDon.DThoiGian.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@hoaDon.FTongGiaTri.ToString("#,##") VND</td>
+                <td>@hoaDon.SGhiChu</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/" class="btn btn-primary">Quay lại trang home</a>
+
+

@@ -9,7 +9,8 @@ namespace BTLNhapMonCNPM.Repository
         public List<TblLoaiSanPham> getAllDanhMuc()
         {
             List<TblLoaiSanPham> list = (from s in PharmacyDb.TblLoaiSanPhams
-                                         select s
+                                         where s.status == true
+                                         select s 
                                          ).ToList();
             return list;
         }

@@ -110,5 +110,16 @@ namespace BTLNhapMonCNPM.Areas.Admin.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [Route("/admin/product/delete/{id}")]
+        public IActionResult deleteProduct(string id)
+        {
+            if(_sanpham.deleteSanPham(id) == true)
+            return Json(new { success = "true"});
+            else
+            {
+                return Json(new { success = "false" });
+            }
+        }
     }
 }

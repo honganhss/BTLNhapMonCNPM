@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 
 namespace BTLNhapMonCNPM.Models;
@@ -72,4 +73,8 @@ public partial class TblSanPham
 
     [InverseProperty("ISanPham")]
     public virtual ICollection<TblLoSanPham> TblLoSanPhams { get; set; } = new List<TblLoSanPham>();
+
+    [Column("bStatus")]
+    [NotNull]
+    public bool status { get; set; }
 }

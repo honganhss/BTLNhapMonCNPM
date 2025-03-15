@@ -4,6 +4,7 @@ using BTLNhapMonCNPM.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BTLNhapMonCNPM.Migrations
 {
     [DbContext(typeof(PharmacyDbContext))]
-    partial class PharmacyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250314133548_M1")]
+    partial class M1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -215,10 +218,6 @@ namespace BTLNhapMonCNPM.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("sTenLoai");
-
-                    b.Property<bool>("status")
-                        .HasColumnType("bit")
-                        .HasColumnName("bStatus");
 
                     b.HasKey("IMaLoaiSp")
                         .HasName("PK__tblLoaiS__4B6603B6C6064CBF");
@@ -432,10 +431,6 @@ namespace BTLNhapMonCNPM.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("sTen");
-
-                    b.Property<bool>("status")
-                        .HasColumnType("bit")
-                        .HasColumnName("bStatus");
 
                     b.HasKey("IMaSp")
                         .HasName("PK__tblSanPh__F20A661E1F6C4D7D");

@@ -68,14 +68,15 @@
         <div class="row mt-4" id="productList">
             @foreach (var product in ProductPagination)
             {
-                <div class="col-md-4 mb-4 product-item" data-category="@product.IMaLoaiSp">
+                string idtag = "tag" + product.IMaSp;
+                <div class="col-md-4 mb-4 product-item" data-category="@product.IMaLoaiSp" id="@idtag">
                     <div class="card shadow-sm">
                         <img src="@product.SImageThuoc" class="card-img-top" alt="Hình ảnh sản phẩm" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">@product.STen</h5>
                             <p class="card-text">Giá bán: @product.FGiaBan.ToString("N0") VND</p>
                             <a asp-action="Edit" asp-route-id="@product.IMaSp" class="btn btn-warning btn-sm">✏ Sửa</a>
-                            <a asp-action="Delete" asp-route-id="@product.IMaSp" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?')">❌ Xóa</a>
+                            <a  onclick="handleclick(@product.IMaSp)" class="btn btn-danger btn-sm">❌ Xóa</a>
                         </div>
                     </div>
                 </div>
@@ -107,6 +108,19 @@
             }
             
          });
+
+         const handleclick = (productID) =>{
+            let res = confirm(`Bạn muốn xóa sản phẩm với id là ${productID}`);
+            if(res == true){
+              fetch(`/admin/product/delete/${productID}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    if(data.success == "true"){
+                       $(`#tag${productID}`).remove()
+                    }
+                })
+            }
+         } 
 
      </script>
 
