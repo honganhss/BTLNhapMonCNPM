@@ -6,8 +6,8 @@ namespace BTLNhapMonCNPM.Interface
     {
 
         public List<TblSanPham> getAllSanPham();
-        public void AddSanPham(TblSanPham sanPham);
-        public void UpdateSanPham(TblSanPham sanPham);
+        public int AddSanPham(TblSanPham sanPham);
+        public int UpdateSanPham(TblSanPham sanPham);
 
         public bool deleteSanPham(string id);
 	}

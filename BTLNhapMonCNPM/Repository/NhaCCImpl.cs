@@ -4,7 +4,7 @@ using BTLNhapMonCNPM.Models;
 namespace BTLNhapMonCNPM.Repository
 {
 	// ReSharper disable once InconsistentNaming
-	public class NhaCCImpl : NhaCCIT
+	public class NhaCCImpl : NhaCungCapImpl
     {
 	    PharmacyDbContext PharmacyDb = PharmacyDbContext.getDbContext();
 

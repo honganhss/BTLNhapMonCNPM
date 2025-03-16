@@ -2,7 +2,7 @@
 
 namespace BTLNhapMonCNPM.Interface
 {
-	public interface NhaCCIT
+	public interface NhaCungCapImpl
 	{
 		List<TblNhaCungCap> getAllNhaCC();
 	}
