@@ -11,7 +11,7 @@ builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<SanPhamIT, SanPhamImpl>();
 builder.Services.AddScoped<LoaiSanPhamIT, LoaiSanPhamImpl>();
-builder.Services.AddScoped<NhaCungCapImpl, NhaCCImpl>();
+builder.Services.AddScoped<NhaCCIT, NhaCCImpl>();
 builder.Services.AddScoped<CustomerAccountIT, CustomerAccountImpl>();
 builder.Services.AddScoped<EmployeeAccountIT, EmployeeAccountImpl>();
 

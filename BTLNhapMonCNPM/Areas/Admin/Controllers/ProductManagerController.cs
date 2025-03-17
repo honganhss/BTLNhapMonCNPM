@@ -11,9 +11,9 @@ namespace BTLNhapMonCNPM.Areas.Admin.Controllers
     {
         private readonly LoaiSanPhamIT _danhmuc;
         private readonly SanPhamIT _sanpham;
-		private readonly NhaCungCapImpl _nhacc;
+		private readonly NhaCCIT _nhacc;
 
-		public ProductManagerController(LoaiSanPhamIT danhmuc, SanPhamIT sanpham, NhaCungCapImpl nhacc)
+		public ProductManagerController(LoaiSanPhamIT danhmuc, SanPhamIT sanpham, NhaCCIT nhacc)
         {
             _danhmuc = danhmuc;
             _sanpham = sanpham;
