@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTLNhapMonCNPM.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d356aacdeab45ba0957b30c2e8da55b35fba60c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcf3bc0c9a5820f813e26068879a8a11a171a8b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BTLNhapMonCNPM.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BTLNhapMonCNPM.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
