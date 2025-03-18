@@ -8,6 +8,10 @@ namespace BTLNhapMonCNPM.Controllers
     public class CartController : Controller
     {
         private static PharmacyDbContext pharmacyDb = new PharmacyDbContext();
+        public CartController(PharmacyDbContext context)
+        {
+            pharmacyDb = context;
+        }
         [Route("/cart")]
         public IActionResult Index()
         {
