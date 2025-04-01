@@ -4,21 +4,40 @@
     ViewData["Title"] = "Đăng ký";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Đăng ký</h1>
+<div class="container">
+    <div class="text-center">
+        <h1 class="well">Đăng ký</h1>   
+    </div>
+    
+    <div class="col-lg-12 well">
+        <div class="row">
+            <form asp-action="RegisterForm" asp-controller="Home">
+                <div class="col-sm-6 form-group">
+                    <label>Họ và tên:</label>
+                    <input class="form-control" type="text" asp-for="SHoTen" />
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Tên Đăng nhập:</label>
+                    <input class="form-control" type="text" asp-for="STenDangNhap" />
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Mật khẩu:</label>
+                    <input class="form-control" type="password" asp-for="SMatKhau" />
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Nhập lại mật khẩu:</label>
+                    <input class="form-control" type="password" />
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Email:</label>
+                    <input class="form-control" type="text" asp-for="SEmail" />
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Số điện thoại:</label>
+                    <input class="form-control" type="text" asp-for="SSdt" />
+                </div> <br><br>
+                <button type="submit" class="btn btn-lg btn-info">Đăng ký</button>
+            </form>
+        </div>
+    </div>
 </div>
-<form asp-action="RegisterForm" asp-controller="Home">
-    <label class="mt-4">Họ và tên:</label>
-    <input class="form-control" type="text" asp-for="SHoTen" />
-    <label class="mt-4">Tên Đăng nhập:</label>
-    <input class="form-control" type="text" asp-for="STenDangNhap" />
-    <label class="mt-4">Mật khẩu:</label>
-    <input class="form-control" type="password" asp-for="SMatKhau" />
-    <label class="mt-4">Nhập lại mật khẩu:</label>
-    <input class="form-control" type="password" />
-    <label class="mt-4">Email:</label>
-    <input class="form-control" type="text" asp-for="SEmail" />
-    <label class="mt-4">Số điện thoại:</label>
-    <input class="form-control" type="text" asp-for="SSdt" />
-    <button class="btn btn-primary mt-4" type="submit">Đăng ký</button>
-</form>
